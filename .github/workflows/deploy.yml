@@ -84,7 +84,7 @@ deploy:
         aws-region: ${{ secrets.AWS_REGION }}
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        instance-ids: "i-06eb21256d6c2bc31"
+        instance-ids: "i-08b410fd71f0acb8e"
         working-directory: /
         comment: Deploy
         command: |
