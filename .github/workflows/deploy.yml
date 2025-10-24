@@ -37,7 +37,7 @@ jobs:
     needs: makeTagAndRelease
     runs-on: ubuntu-latest
     env:
-      DOCKER_IMAGE_NAME: kp-2025-10-24-2
+      DOCKER_IMAGE_NAME: kcj-25-10-24
     steps:
       - uses: actions/checkout@v4
       - name: Docker Buildx 설치
