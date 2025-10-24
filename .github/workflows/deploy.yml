@@ -64,7 +64,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      DOCKER_IMAGE_NAME: kp-2025-10-24-2
+      DOCKER_IMAGE_NAME: kcj-25-10-24
     needs: [ buildImageAndPush ]
     steps:
       - name: set lower case owner name
@@ -79,7 +79,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          instance-ids: "i-08b410fd71f0acb8e"
+          instance-ids: "i-04d83e7615535455e"
           working-directory: /
           comment: Deploy
           command: |
